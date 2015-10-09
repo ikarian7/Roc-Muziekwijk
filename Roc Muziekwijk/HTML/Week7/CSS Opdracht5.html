@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Opdracht5.css">
+<title>CSS opdracht</title>
+</head>
+<body>
+<div id=Label>
+<p> Voornaam </p>
+<p> Tussenvoegsel </p>
+<p> Achternaam </p>
+<p> Geslacht </p>
+<p> Kleur ogen </p>
+<p> Geboortedatum </p>
+<p> Omschrijving </p>
+</div>
+<div>
+<form action="voorbeeldform.php" method="post">
+	<br>
+	<div id=HeelTekstvak>
+<input type="text" name="vnaam" value="">
+	<br>
+ 	<input type="text" name="tsnvgsl" value="">
+	<br>
+	<input type="text" name="anaam" value="">
+	<br>
+		<input type="radio" name="geslacht" value="man"> Man
+		<input type="radio" name="geslacht" value="man"> Vrouw
+	<br>
+		<select name="klogen">
+        <option>Groen</option>
+        <option>Grijs</option>
+        <option>Blauw</option>
+        <option>Bruin</option>
+    </select>
+	<br>
+    <input type="date" name="gebdatum" value="">
+	<br>
+	<textarea name="omschrijving"></textarea>
+	<br>
+	<input type="submit" value="Submit">
+	</div>
+</form>
+</body>
+</html>

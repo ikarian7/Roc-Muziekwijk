@@ -1,0 +1,15 @@
+#HeelTekstvak{
+	position: absolute;
+	left: 10%;
+	margin-left: 10px;
+}
+#Label{
+	position: absolute;
+	float: left;
+	margin-left: 10px;
+	padding-top: 10px;
+}
+#Tekstvak{
+	position: absolute;
+	margin-bottom: 40px;
+}
