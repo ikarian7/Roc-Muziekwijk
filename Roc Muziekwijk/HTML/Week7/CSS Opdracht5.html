@@ -6,39 +6,47 @@
 </head>
 <body>
 <div id=Label>
-<p> Voornaam </p>
-<p> Tussenvoegsel </p>
-<p> Achternaam </p>
-<p> Geslacht </p>
-<p> Kleur ogen </p>
-<p> Geboortedatum </p>
-<p> Omschrijving </p>
+<p id=Tekst> Voornaam </p>
+<p id=Tekst> Tussenvoegsel </p>
+<p id=Tekst> Achternaam </p>
+<p id=Tekst> Geslacht </p>
+<p id=Tekst> Kleur ogen </p>
+<p id=Tekst> Geboortedatum </p>
+<p id=Tekst> Omschrijving </p>
 </div>
-<div>
-<form action="voorbeeldform.php" method="post">
+	<form action="voorbeeldform.php" method="post">
+	<div id=Label>
+	<p id=LekkerEten> Lekker eten: </p>
+	<input id=Sperciebonen type="checkbox" name="eten" value="sperciebonen"><p id=EtenSperciebonen>Sperciebonen</p>
 	<br>
-	<div id=HeelTekstvak>
-<input type="text" name="vnaam" value="">
+	<input id=Aardappelen type="checkbox" name="eten" value="aardappelen"><p id=EtenAardappelen>Aardappelen</p>
 	<br>
- 	<input type="text" name="tsnvgsl" value="">
+	<input id=Hamburger type="checkbox" name="eten" value="hamburger"><p id=EtenHamburger>Hamburger</p>
+	</div>
+	<div>
+	<input id=Tekstvak type="text" name="vnaam" value="">
 	<br>
-	<input type="text" name="anaam" value="">
+ 	<input id=Tekstvak type="text" name="tsnvgsl" value="">
 	<br>
-		<input type="radio" name="geslacht" value="man"> Man
-		<input type="radio" name="geslacht" value="man"> Vrouw
+	<input id=Tekstvak type="text" name="anaam" value="">
 	<br>
-		<select name="klogen">
+		<input id=Tekstvak type="radio" name="geslacht" value="man"> Man
+		<input id=Tekstvak type="radio" name="geslacht" value="man"> Vrouw
+	<br>
+		<select id=Tekstvak name="klogen">
         <option>Groen</option>
         <option>Grijs</option>
         <option>Blauw</option>
         <option>Bruin</option>
     </select>
 	<br>
-    <input type="date" name="gebdatum" value="">
+    <input id=Tekstvak type="date" name="gebdatum" value="">
 	<br>
-	<textarea name="omschrijving"></textarea>
-	<br>
-	<input type="submit" value="Submit">
+	<textarea id=Tekstvak name="omschrijving"></textarea>
+	</div>
+	<div id=SubmitKnop>
+	<input id=OmschrijvingTekstvak type="submit" value="Submit">
+	<input id=OmschrijvingTekstvak type="submit" value="Submit">
 	</div>
 </form>
 </body>

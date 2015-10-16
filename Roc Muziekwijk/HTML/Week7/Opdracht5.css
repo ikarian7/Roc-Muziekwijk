@@ -1,15 +1,64 @@
-#HeelTekstvak{
-	position: absolute;
-	left: 10%;
-	margin-left: 10px;
-}
+/* Labels */
+
 #Label{
-	position: absolute;
 	float: left;
 	margin-left: 10px;
 	padding-top: 10px;
 }
-#Tekstvak{
+#Tekst{
+	margin-bottom: 10px;
+	margin-top: 15px;
+	line-height: 15px;
+}
+#LekkerEten{
+	margin-bottom: 10px;
+	margin-top: 3px;
+	margin-left: 200px;
 	position: absolute;
-	margin-bottom: 40px;
+}
+#EtenSperciebonen{
+	margin-bottom: 5px;
+	margin-top: 3px;
+	margin-left: 320px;
+	position: absolute;
+}
+#EtenAardappelen{
+	margin-bottom: 5px;
+	margin-top: 3px;
+	margin-left: 320px;
+	position: absolute;
+}
+#EtenHamburger{
+	margin-bottom: 5px;
+	margin-top: 3px;
+	margin-left: 320px;
+	position: absolute;
+}
+
+/* Invoervelden */
+
+#Sperciebonen{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 300px;
+	position: absolute;
+}
+#Aardappelen{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 300px;
+	position: absolute;
+}
+#Hamburger{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 300px;
+	position: absolute;
+}
+#Tekstvak{
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+#SubmitKnop{
+	margin-left: 400px;
 }
