@@ -7,22 +7,21 @@ import java.applet.*;
 
 // Een klasse met de naam Opdracht1 van het type Applet.
 public class Opdracht1 extends Applet {
+	double salaris[];
 
 	// Een (lege) methode die de Applet gaat initialiseren.
 	public void init() {
-		setSize(300, 400);
+		setSize(400, 400);
+		salaris = new double[5];
+        for (int teller = 0; teller < salaris.length; teller ++) {
+            salaris[teller] = 100 * teller + 100;
 	}
+}
 
 	// Een methode die de inhoud van het scherm tekent.	
 	public void paint(Graphics g) {
-		int teller;
-		int lengte = 0;
-		int breedte = 0;
-		for(teller = 1; teller <= 10; teller++) {
-			lengte += 20;
-			breedte += 20;
-			g.drawLine(breedte , 300, lengte, 50 );
-			g.drawString("" + teller, lengte , 315);
-		} 
+		 for (int teller = 0; teller < salaris.length; teller ++) {
+	            g.drawString("" + salaris[teller], 50, 20 * teller + 20);
+		 } 
 	}
 }
