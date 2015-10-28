@@ -12,7 +12,7 @@ public class Opdracht1 extends Applet {
 	// Een (lege) methode die de Applet gaat initialiseren.
 	public void init() {
 		setSize(400, 400);
-		salaris = new double[5];
+		salaris = new double[10];
         for (int teller = 0; teller < salaris.length; teller ++) {
             salaris[teller] = 100 * teller + 100;
 	}
