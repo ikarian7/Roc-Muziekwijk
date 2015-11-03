@@ -20,15 +20,15 @@ public class Opdracht1 extends Applet {
         for (int teller = 0; teller < salaris.length; teller ++) {
             salaris[teller] = optellen * teller + beginGetal;
             totaalSalaris += salaris[teller];
-        }
+    }
 }
 
 	// Een methode die de inhoud van het scherm tekent.	
 	public void paint(Graphics g) {
 		gemiddelde = totaalSalaris / salaris.length;
-		 for (int teller = 0; teller < salaris.length; teller ++) {
+		for (int teller = 0; teller < salaris.length; teller ++) {
 	            g.drawString("" + salaris[teller], 50, 20 * teller + 20);
 	            g.drawString ("Gemiddelde is: " + gemiddelde, 50, 220); 
-		 } 
+		} 
 	}
 }
