@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<title>jQuery opdracht</title>
+</head>
+<body>
+<script>
+$(document).ready(function() {
+	$("li").css("background-color", "grey");
+	$("li").css("list-style-type", "none");
+	$("li").css("display", "inline");
+	$("li").css("padding-top", "40px");
+	$("li").css("padding-bottom", "40px");
+	$("li").css("padding-left", "40px");
+	$("li").css("padding-right", "40px");
+	$("li").css("margin", "10px");
+	$("li").eq(0).html("home");
+	$("li").eq(1).html("contact"); 
+	$("li").eq(2).html("producten"); 
+	$("ul").css("margin-top", "50px");
+});
+</script>
+<ul>
+<li>bla</li>
+<li>joepie</li>
+<li>spam</li>
+</ul>
+</body>
+</html>
