@@ -5,6 +5,7 @@ package H12;
 import java.awt.*;
 import java.applet.*;
 import java.awt.event.*;
+import java.util.*;
 
 // Een klasse met de naam Opdracht1 van het type Applet.
 public class Opdracht3 extends Applet {
@@ -16,6 +17,7 @@ public class Opdracht3 extends Applet {
 	public void init() {
 		setSize(400, 400);
 		tekstvakken = new int[5];
+		Arrays.sort(tekstvakken);
 		knopOk = new Button("Ok");
 		knopOk.addActionListener( new knopOkListener() );
 		add(knopOk);
@@ -26,7 +28,7 @@ public class Opdracht3 extends Applet {
 		}
 	}
 
-	// Een methode die de inhoud van het scherm tekent.	
+	// Een methode die de inhoud van het scherm tekent.
 	public void paint(Graphics g) {
 		for (int teller = 0; teller < tekstvakken.length; teller ++) {
 			g.drawString("" + tekstvakken[teller], 50, 20 * teller + 20);
